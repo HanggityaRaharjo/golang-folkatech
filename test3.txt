@@ -1,3 +1,9 @@
+Dengan menggunakan NoSql,kinerja dari NoSql lebih cepat dibanding relational database sql,
+Struktur data lebih fleksibel di banding relational database,dalam case ini saya berpikir apabila mungkin
+di kemudian hari ingin menambahkan fitur dan terdapat kolom-kolom/key yang berbeda satu sama lain lebih dimungkinkan
+menggunakan NoSql,berbeda dengan relational database sql yang harus konsisten dari awal.
+
+
 // Users Collection
 {
   "_id": ObjectId("user_id"),
