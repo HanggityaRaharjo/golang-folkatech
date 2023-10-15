@@ -1,0 +1,47 @@
+// Users Collection
+{
+  "_id": ObjectId("user_id"),
+  "phone_number": "1234567890",
+  "username": "user1",
+  "password": "hashed_password"
+}
+
+// Groups Collection
+{
+  "_id": ObjectId("group_id"),
+  "group_name": "Group 1",
+  "admin_id": "user_id_of_admin"
+}
+
+// GroupMembers Collection
+{
+  "_id": ObjectId("group_member_id"),
+  "group_id": "group_id",
+  "user_id": "user_id",
+  "role": "Admin/Member"
+}
+
+// GroupMessages Collection
+{
+  "_id": ObjectId("group_message_id"),
+  "group_id": "group_id",
+  "sender_id": "user_id",
+  "content": "Hello, Group!",
+  "status": "Read/Sent/Pending",
+  "timestamp": ISODate("timestamp"),
+  "images": ["image_url1", "image_url2"]
+}
+
+// PersonalMessages Collection
+{
+  "_id": ObjectId("personal_message_id"),
+  "sender_id": "user_id_1",
+  "recipient_id": "user_id_2",
+  "content": "Hello, User 2!",
+  "status": "Read/Sent/Pending",
+  "timestamp": ISODate("timestamp"),
+  "images": ["image_url1", "image_url2"]
+}
+
+
+
